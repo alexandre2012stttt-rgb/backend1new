@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -68,5 +67,5 @@ model Subscription {
   payment        Payment?  @relation(fields: [paymentId], references: [id])
 
   planId         String?
-  plan           Plan?     @relation(fields: [planId], references: [id])
+  plan           Plan?     @relation(fields: [planId], references: [id])
 }
